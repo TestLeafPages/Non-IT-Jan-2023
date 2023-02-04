@@ -1,0 +1,69 @@
+Today's Agenda:
+==============
+9.10 to 10.00  Java Introduction -Class
+10.00 to 10.15 Classroom
+10.15 to 11.00 Datatypes and Variables
+11.00 to 11.15 Classroom
+11.15 to 11.30 break
+11.30 to 12.30 Method and Object
+12.30 to 12.50 classroom
+12.50 to 1.00  Recap 
+
+
+
+
+Naming Conventions
+==================
+Project
+Starts with uppercase
+Package->lowercase
+Class-->PascalNotation-->JavaLearning 
+  ->like  blueprint/testcase which includes members->Variables and Method
+  
+ sample.java-->sample.class(Compiled)-->executed in JVM
+ human script-->binaries --->JVM-->console -->human understandable (Console)
+  
+variable-->camelCase
+  -->supports to store information based on the dataType
+  
+Primitive 
+============
+ numbers-Integers
+ byte,int,short, long 
+deciaml values->Float
+============
+float
+double
+Character
+========
+char-->one single character
+Boolean->yes/No
+==========
+boolean 
+
+Non primitive
+
+String->charsequence
+Array
+
+syntax to declare variable:
+==========================
+datatype varName=value;
+int x=10;
+char logo='r';
+String name="Vidya"
+
+
+Method--> to perform action
+=======
+method signature:
+accessspecifier returntype methodName(inputArgument)
+
+accessspecifier- public private protected default
+returntype-->type info returning-->int boolean string char void
+enterUsername->methodName
+inputArgument ->inputs
+
+public void addNumbers(int a ,int b){
+}
+
