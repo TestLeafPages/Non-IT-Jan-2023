@@ -1,0 +1,71 @@
+Today's Agenda
+==============
+
+9.00 to 10.00pm   Selenium Introduction
+10.00 to 10.15pm  Classroom
+10.15 to 11.30pm  Selenium Script
+11.30 to 11.55pm  Classroom
+11.55 to 12.10pm  Break
+12.10 to 12.50pm  Dropdown
+12.50 to 1.05pm   classroom
+1.05  to 1.15pm   Recap
+
+
+QTP -->Mercury
+
+Selenium WebDriver
+-->Open source tool
+-->Can to talk all browsers chrome, edge, firefox..
+-->Supports all OS windows,mac, android, IOs
+-->supports all programming
+
+Selenium->not automate desktop -->MS  ApachePOI (Java Library)
+   /mobile application--Appium
+   -->JDBC Connection(Java Library)
+
+
+Selenium clientlibrary --->W3CProtocol--->Driver-->Browser
+  WorldWideConsotorium Protocol
+
+Selenium-->       API Call---> HTTP Req            (driver) -->browser 
+							   HTTP Res		   <--  ChromeDriver-->chrome
+										  Edgedriver--->Edge Browser
+										  FireFoxDriver---->FireFox
+        (Application Programming Interface)
+		
+		
+		
+pom-->project object model-->holds the libraries/dependencies required by the project		
+		
+rightClick-->inspect
+ctrl shift i
+3dots-->from browser-->more tools-->developer tools
+				
+
+WebPage-->
+WebElements -->fields in the applications--textbox, button,radio,checkbox..
+DOM-->Document Object Model-->design of webpage/Webelement/developer tool
+To inspect any webElement in the web page-->rightclick ->inspect or spytool
+
+HTML
+Tagname-->the type of the element -->purple colour
+  <html>
+  <input>
+  <button>
+  <div>
+  
+ Description of the element -->attributes -->brown colour
+ --->attribute value-->blue colour
+ -->a tag-->link text-->with href attribute
+ 
+
+Locator
+
+id
+name
+classname
+linktext
+Partial linktext
+tagname
+xpath
+CSS

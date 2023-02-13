@@ -1,0 +1,131 @@
+Today's Agenda:
+==============
+9.00 to 9.15	 Recap
+9.15 to 10.15    Learning Basic xpath
+10.15 to 10.40   Classroom
+10.45 to 11.00   Break  
+11.00 to 12.15   Advanced xpath
+12.15 to 12.35   Break
+12.25 to 12.45   Classroom
+12.45 to 1.05    Webdriver Methods(few)/wait statement
+1.05 to 1.15 	 Recap  
+
+
+
+
+
+XPath-->xml path-->address to the element
+
+Absolute xpath-Start with / follow the from the root element of DOM
+=============
+ /html/body/div[2]/div[2]/div  html to form
+ /html/body/div[2]/div[2]/div/form/p/input->username/pwd
+
+Relative xpath:-->starts with //
+===========
+general syntax:
+
+//tagname[@attribute='attributeValue']
+
+
+Attribute based xpath
+===========================
+
+//tagname[@attribute='attributeValue']
+For username
+//input[@id='username']
+//label[@for='username']-->label webelement
+
+Text based xpath:
+=================
+//tagname[text()='textValue']
+//p[text()='OFF LIMITS STRIDE III Gray Running Shoes']
+//a[text()='Leads']
+
+Partial text based XPath
+=========================
+
+//tagname[contains(text(),'partial text')]
+//a[contains(text(),'SFA')]
+
+Partial Attribute based
+========================
+//tagname[contains(@attribute,'attribute Value')]
+//input[contains(@value,'Log')]
+
+
+
+collection based xpath
+======================
+syntax
+(relative xpath)[index] -->index always starts with 1
+(//input[@class='inputLogin'])[2]
+
+Advanced Xpath-->Axes xpath/Relationship based xpath
+===============
+
+Grandparent-->parent-->children-(1) GrandChild
+ 
+			  Parent-->children-(2)
+
+               sibiling     -cousin
+
+
+Parent to child
+===============
+(Relative xpath of parent)/child tagname(optional relative xpath child)
+
+//div[@id='form']/form/p
+//p[@class='top']/input
+
+Child to Parent
+================
+(relative xpath of child)/parent::tagname of the parent ::->Scope resoluter
+//input[@id='password']/parent::p
+
+GrandParent to GrandChild
+==========================
+(Relative xpath of grandparent)//grandchild tagname
+(//form[@id='login']//label)[2]
+
+GrandChild to Grandparent
+(GrandChild relative xpath)/ancestor::tagname
+//input[@class='decorativeSubmit']/ancestor::div
+
+Sibling
+Elder to younger siblings
+=========================
+(relative xpath of Elder)/following-sibling::tagname of younger 
+//label[@for='username']/following-sibling::input
+//p[@class='top']/following-sibling::p
+
+Younger to Elder Sibilings
+==========================
+(Relativexpath of younger)/preceding-sibling::tagname of elder
+//input[@id='password']/preceding-sibling::label
+
+Cousin
+Elder to younger Cousin
+======================
+(Realtive xpath of elder)/following::tagname
+//label[@for='username']/following::input
+
+Younger to Elder cousin
+======================
+(Relative xpath of younger)/preceding::tagname
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
