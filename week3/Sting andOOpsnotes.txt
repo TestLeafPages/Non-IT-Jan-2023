@@ -1,0 +1,66 @@
+Today's Agenda
+=================
+
+9.10  to 9.50am String Introduction
+9.50  to 10.10 	Classroom
+10.10 to 10.50  String Concepts
+10.50 to 11.05  Break
+11.05 to 11.45  Inheritance
+11.45 to 12.00  Classroom
+12.00 to 12.45  polymorphism
+12.45 to 1.00   classroom
+1.00 to  1.10 	Recap  
+
+
+
+String:
+======
+->Class -->Immutable-cant change-->
+equals /==
+equalsignorecase and contains
+-->Non-primitive datatype:
+
+String variable ="value";//literal way 
+--> sequence of character-->all characters space, special ch, al,num
+
+String variable=new String("Value")//using instance
+
+
+OOPs- Object Oriented Programming language
+
+Inheritance
+Polymorphism
+Abstraction
+Encapsulation
+
+Inheritance-->Acquiring the properties of parent class
+
+Is A-->relation
+
+Keyword-->extend
+
+parent class/super class
+
+subclass/derived class/child class
+
+
+AccessSpecifier
+
+Public -->Accessed by all classes -using object/extends
+
+protected-->all packages- using extends 
+
+default-->within the package in all the classes 
+
+private-->can be accessed only within the class
+
+
+Polymorphism-->taking many forms
+
+Complietime /Method Overloading
+-->Same class-->same methodname-->diff arguments
+
+Runtime/Method Overriding
+
+-->with subclass/derived
+-->same method-->same arguments -->different classes(inheritance)
