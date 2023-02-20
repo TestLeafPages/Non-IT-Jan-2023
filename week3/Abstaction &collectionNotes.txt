@@ -1,0 +1,11 @@
+Today's Agenda
+=================
+
+9.00  to 10.00am Abstraction
+10.00 to 10.15 	Classroom
+10.15 to 10.30  Break
+10.30 to 11.40  Collection-List
+11.40 to 12.00  classroom
+12.00 to 12.40  Collection-Set
+12.40 to 1.00   classroom
+1.00 to  1.10 	Recap  
