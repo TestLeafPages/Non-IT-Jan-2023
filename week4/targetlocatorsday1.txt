@@ -1,0 +1,64 @@
+Agenda: Target Locators
+======
+9.00 to 9.50    Alert
+9.50 to 10.05   Classroom
+10.05 to 11.15  Frame
+11.15 to 11.30	Classroom
+11.30 to 11.40	Break
+11.40 to 12.45  Window handling
+12.45 to 1.00   classroom 	
+1.00 to 1.10 	Recap
+
+
+
+Alert
+=====
+-->cannot be ignored-->unhandledAlertexception
+-->inspectable
+
+switchTo().alert()-->to transfer driver control to the alert box
+-->ok button -->accept()
+-->ok/cancel-->accept()/dismiss()
+-->getText()
+-->sendKeys();
+
+Modal dialogbox(alert)
+-->simple Alert
+   ->only one button to click
+-->Confirmation alert
+-->prompt alert
+
+
+Non-Modal dialogbox(sweetalert)
+-->sweet alert
+-->can be handled as like a normal webelement
+-->try to handle as alsert -->NoAlertPresentException
+
+
+Frame:
+=====
+iframe-->inline frame
+Html inside other html
+
+NoSuchElement exception
+
+
+switchTo().frame(index)-->starts with zero
+switchTo().frame(stringid/name attribute of Frameelement)
+switchTo().frame(frameas webElement);
+
+switchTo().defaultContent()-->takes you to the mainpage
+switchTo().parentFrame()-->take you to the immediate frame
+
+
+WindowHandle:(popup window)
+============
+Window handle-->unique address of the webPage/window/tab
+getWindowHandle()-->holds the address of current active window
+getWindowHandles()-->holds the address of all openend window
+
+step:1-->getWindowHandles() 
+       -->return type-->Set<String> & 
+	   --->find the number of windows(get the count of windows)-->size();
+step:2-->conver the set to list<String>
+Step:3-->using SwitchTo().window(list index)
