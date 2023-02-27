@@ -1,0 +1,65 @@
+Abstraction-->Hiding the details (unwanted datas)-->Providing us the relavant datas
+
+-->reduce the complexity of project
+
+Abstract class--->0 to 100% abstraction
+Interface-->100% of Abstraction
+
+Cannot create Object/instantiate the abstract/interface class
+
+
+Abstract class:
+==============
+-->implemented and unimplemented methods
+-->normal method and design
+--uses keyword -extends
+
+Interface-->100% abstraction
+===========
+-->have only design
+-->only unimplemented methods
+-->uses keyword -->implements
+
+
+Interface extend other Interface --->use inheritance
+class implements-->interface
+class cannot extend the interface
+============================================
+Collection Interface
+
+List 
+Set
+
+Array-->fixed size-->cannot  increase or decrease the size of array
+
+
+List-->interface -->to store dynamic datas
+-->can grow/ Shrink
+-->Maintains the insertion order
+-->allows Duplicate datas
+
+ArrayList-->index based-->access the element-->No much modification
+LinkedList-->Pointer-->insert /deletion-->
+
+add
+remove
+clear
+get
+contains
+size
+Set
+===
+-will not allow the duplicates
+3 implementation classess
+HashSet-->random
+LinkedHAshSet-->Insertion order
+Treeset-->ASCII
+
+
+add
+remove
+clear
+contains
+size
+
+
