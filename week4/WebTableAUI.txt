@@ -1,0 +1,47 @@
+WebTable:
+========
+-->tabular representation of information/data in a webappln
+-->rows and columns
+
+  static table-->rows and columnns -->fixed size
+  dynamic table-->rows and columns -->not in fixed
+
+
+<table>-->table name 
+<thead>-->header information
+<th>-->data of the header
+<tbody>-->tabular body
+<tr>-->table rows
+<td>-->table data
+
+
+Step:1 -->identify the table
+
+step:2 -->find the count of rows
+
+Step:3--.find the count of columns
+
+step:4 -->retreive the data based on the req(colmn data, row data)
+
+
+Advanced User Interaction(AUI)
+=============================
+click
+doubleclick
+right click
+mouse hover
+scroll
+drag and drop
+clik and hold
+
+ctrl key alt, shift
+
+
+Actions class-->builder pattern-->perform sequecence of actions
+
+
+
+
+
+
+
