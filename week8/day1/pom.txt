@@ -1,0 +1,84 @@
+Todays Agenda:
+===============
+   09:00-09:45->POM introduction
+   09:45-10:30->POM Design
+   10:40-11:25->Classroom+break
+   11:25-11:50->Sequential execution
+   12:00-12:25->Classroom
+   12:25-12:55->Parallel execution
+   12:55-01:20-> Classroom
+
+   POM:
+===============
+
+what is POM?
+pom.xml--->project object model
+
+
+POM--> Page Object Model  
+
+POM is framework or not?
+its not framework
+
+
+POM is design pattern
+
+	  
+
+	  POM->Page Object Model
+	   
+	 -Page Object Model is a design pattern to build your framework
+
+
+
+POM:
+1.Base class- commom code
+2.Pages-
+Login
+-username
+-password
+-login
+HomePage
+-crmsfa
+3.Runner
+4.Utils
+
+Easy maintenance:
+
+
+
+
+Steps to Implement PageObjectModel:
+==================================
+   1)Create a separate Project for POM
+   2)Add all the dependencies in the pom.xml
+   3)Create 3 packages (base,pages,runner)
+   4)Inside base package create a BaseClass
+   5)Inside the BaseClass have preCondition and PostCOndition(Load the url)
+   6)Inside the pages package create 6 pages
+       -LoginPage
+	   -WelcomePage
+	   -MyHomePage
+	   -MyLeadsPage
+	   -CreateLeadPage
+	   -ViewLeadPage
+   7)Make sure all the pages should extend your BaseClass
+   8)For each Pages create separate methods and put the codes for each of your action
+   9)Finally add the return statement
+        -If the control stays  in the same page return this and change the return type
+        -If the control moves to another page then add return statement according to it
+
+
+static ---only one window id  create for all class
+
+2 class 
+        1st tab open-----window  id 
+        2nd tab open----- different
+
+
+
+        execute in parallel in POM
+        =============================
+        1. to remove static keyword from base class
+        2. you need create own constructor  all the class ,this.driver=driver
+        3.where you given return new constructor(driver)-need pass the driver inside method
