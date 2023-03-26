@@ -1,0 +1,135 @@
+Todays Agenda:
+===============
+   09:10-09:35->Data Integration With POM
+   09:35-10:20->Extent Report 
+   10:20-11:10->Classroom+break
+   11:10-11:40->Extent Report Integration With POM
+   11:40-12:10->Classroom
+   12.10-12.30->Continue with snapshot
+   12:30-01:15->How the Framework will be
+   
+
+Extent Report
+==========
+-->Thrid Party API /framework from a avenstack(class)
+-->To get the report with 
+summary, 
+graphs ,
+scrennshots
+we can have category,author,...
+
+<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+		
+
+ExtentHtmlreporter:
+==================
+ExtentReports
+attach reporter
+ExtentTest
+mediaenititybuilder
+
+
+
+		 * Steps:
+			======
+			1.Setup Physical report path
+			2.Create object for extentreports
+			3.Attach data with physical file
+			4.Create a testcase and assigned test details
+			5.Steps level status
+			6.Mandatory step to stop. */
+		
+
+   @Beforesuite--> start report
+	@BeforeTest-->collected details of the testcase 
+		@BeforeClass-->add this details to the report
+			@Dataprovider
+			@BeforeMethod
+				@Test   
+
+Integrating Extent Report with POM
+************************************
+Beforesuite
+1.Create a methods as startReport() 
+      add the first 4 steps and annotate the method with @BeforeSuite
+Aftersuite
+2.Create a method as endReport() 
+	add extent.flush() and annotate with @AfterSuite
+
+we need declare extentreport as globally
+
+@BeforeSuite-->report started
+	@BeforeTest-->set the filename, testname
+		@BeforeClass-->
+			@DataProvider-->readexcel
+				@BeforeMethod-->common methods
+						@Test-->test steps
+
+3.Create a method as testDetails to add the testname, testdesc , author and category
+and annotate the method with @BeforeClass
+
+ @BeforeTest -->setfile()-->set the values to the testname,desc, author and category
+
+
+4.create a method as reportstep and add status which is to be received from pages
+
+5.Create a takesnap method to apped the screenshot to the reposrt step
+
+
+
+ LeafBot - Hybrid Framework: 
+======================
+Our framework is hybrid framework which is designed based on Page Object Model.
+We used Selenium WebDriver to interact with Web application, TestNg is used for test execution.
+Apache POI to read the data from excel to support multiple data testing. 
+Cucumber is used to support the BDD approach and Extent report is used to get a html automation summary report.
+
+Advantages of our framework:
+----------------------------
+- Easy maintenance
+- To maintain the uniformity
+- To increase productivity
+- To reduce the code duplication
+- Supports multilingual application
+- For better reporting (Integrated Extent Report)
+
+
+What are the components:
+=====================
+1. Browser and Element interfaces to design this framework
+2. SeleniumBase is the library for the Wrapper methods (implemented the interfaces)
+3. ProjectSpecificMethods as Base class having common methods specific to the project
+4. pages package to have the classes for each page
+5. Testcases package to have the classes for each test case
+6. Utils package to have the classes related to external applications
+	DataLibrary(to read data from excel)
+	Reporter(Configuration for ExtentReport)
+
+Hirerarchy of Classes in the framework:
+========================================
+AbstractTestNGCucumberTests
+		Reporter
+		  	SeleniumBase
+				ProjectSpecificMethods
+					Pages & Testcases
+Execution Flow:
+===============
+@BeforeSuite --> Reporter (startReport)
+	@BeforeTest --> TestCase class (setValues)
+		@BeforeClass --> Reporter (report)
+			@DataProvider --> ProjectSpecificMethods
+				@BeforeMethod --> ProjectSpecificMethods
+					@Test --> TestCase class
+				@AfterMethod --> ProjectSpecificMethods
+		@AfterClass --> No Method
+	@AfterTest --> No Method
+@AfterSuite	--> Reporter
+
+
+
+
+
